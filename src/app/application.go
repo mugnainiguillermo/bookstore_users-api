@@ -11,5 +11,5 @@ var (
 func StartApplication() {
 	mapUrls()
 	router.SetTrustedProxies(nil)
-	router.Run(":8080")
+	router.Run("localhost:8080")
 }

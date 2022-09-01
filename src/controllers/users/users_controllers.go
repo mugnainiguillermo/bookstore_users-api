@@ -2,9 +2,9 @@ package users
 
 import (
 	"github.com/gin-gonic/gin"
-	"mugnainiguillermo/bookstore_users-api/domain/users"
-	"mugnainiguillermo/bookstore_users-api/services"
-	"mugnainiguillermo/bookstore_users-api/utils/errors"
+	"mugnainiguillermo/bookstore_users-api/src/domain/users"
+	"mugnainiguillermo/bookstore_users-api/src/services"
+	"mugnainiguillermo/bookstore_users-api/src/utils/errors"
 	"net/http"
 	"strconv"
 )
