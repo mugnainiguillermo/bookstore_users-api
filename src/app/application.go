@@ -2,6 +2,7 @@ package app
 
 import (
 	"github.com/gin-gonic/gin"
+	"mugnainiguillermo/bookstore_users-api/src/logger"
 )
 
 var (
@@ -10,6 +11,9 @@ var (
 
 func StartApplication() {
 	mapUrls()
+
+	logger.Info("about to start the application...")
+
 	router.SetTrustedProxies(nil)
 	router.Run("localhost:8080")
 }
