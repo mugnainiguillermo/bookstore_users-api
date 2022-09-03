@@ -15,5 +15,5 @@ func StartApplication() {
 	logger.Info("about to start the application...")
 
 	router.SetTrustedProxies(nil)
-	router.Run("localhost:8080")
+	router.Run("localhost:9000")
 }
