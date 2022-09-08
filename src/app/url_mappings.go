@@ -1,8 +1,8 @@
 package app
 
 import (
-	"mugnainiguillermo/bookstore_users-api/src/controllers/ping"
-	"mugnainiguillermo/bookstore_users-api/src/controllers/users"
+	"github.com/mugnainiguillermo/bookstore_users-api/src/controllers/ping"
+	"github.com/mugnainiguillermo/bookstore_users-api/src/controllers/users"
 )
 
 func mapUrls() {
@@ -14,4 +14,5 @@ func mapUrls() {
 	router.PATCH("/users/:user_id", users.Update)
 	router.DELETE("/users/:user_id", users.Delete)
 	router.GET("/internal/users/search", users.Search)
+	router.POST("/users/login", users.Login)
 }
